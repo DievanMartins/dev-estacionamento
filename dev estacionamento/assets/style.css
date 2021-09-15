@@ -1,0 +1,240 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --back-header:#2a3447;
+  --back-body:#fffbfa;
+  --color-white: #fff;
+  --color-th:#263647;
+  --back-list: #d4d3d3;
+  --button-send:#6d849c;
+  --border-input:rgb(121, 120, 120);
+  --back-remove:rgb(253, 18, 18);
+  --hover-remove:rgb(243, 57, 57);
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+  background: var(--back-body);
+  overflow-x: hidden;
+}
+header{
+  height: 5rem;
+  background: var(--back-header);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-white);
+}
+
+/*INPUTS*/
+#input{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+input{
+ font-size: 1.2rem;
+}
+input, button{
+  width: 50rem;
+  height: 3rem;
+  margin-top: 0.6rem;
+  outline: 0;
+  text-align: center;
+  border: 1px solid var(--border-input);
+  border-radius: 4px;
+}
+input:first-child{
+  margin-top: 2rem;
+}
+button{
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: uppercase;
+  background: var(--button-send);
+}
+button:hover{
+  color: var(--color-white);
+  background: var(--color-th);
+  transition: 0.4s;
+}
+
+/*output*/
+#output{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#output table{
+  margin-top: 3rem;
+  width: 50rem;
+  height: 3rem;
+  background: var(--color-th);
+  border-radius: 4px;
+}
+thead{
+  height: 3rem;
+  color: var(--color-white);
+}
+th{
+  text-transform: uppercase;
+}
+td{
+  font-weight: 600;
+  padding: 1rem;
+  background: var(--back-list);
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--color-th);
+}
+th, td{
+  width: 12.5rem;
+}
+.delete{
+  width: 8rem;
+  height: 2rem;
+  margin-top: 0rem;
+  background: var(--back-remove);
+  color: var(--color-white);
+}
+.delete:hover{
+  background: var(--hover-remove);
+  transition: 0.4s;
+}
+
+/*FOOTER*/
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  color: var(--back-header);
+  padding: 1rem 0;
+}
+.creator{
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.social{
+  padding-top: 0.5rem;
+}
+.social a img{
+  width: 2rem;
+  margin: 0 0.2rem;
+}
+
+/*RESPONSIVO*/
+@media(max-width:768px){
+  input, button{
+    width: 45rem;
+    height: 3rem;
+  }
+  #output table{
+    width: 45rem;
+    height: 3rem;
+  }
+}
+@media(max-width:700px){
+  input, button{
+    width: 40rem;
+    height: 3rem;
+  }
+  #output table{
+    width: 40rem;
+    height: 3rem;
+  }
+}
+@media(max-width:640px){
+  input, button{
+    width: 38rem;
+    height: 3rem;
+  }
+  #output table{
+    width: 38rem;
+    height: 3rem;
+  }
+}
+@media(max-width:540px){
+  input, button{
+    width: 30rem;
+    height: 3rem;
+  }
+  #output table{
+    width: 30rem;
+    height: 3rem;
+  }
+}
+@media(max-width:482px){
+  input, button{
+    width: 28rem;
+    height: 3rem;
+  }
+  #output table{
+    width: 28rem;
+    height: 3rem;
+  }
+}
+@media(max-width:425px){
+  input{
+    font-size: 1rem;
+  }
+  input, button{
+    width: 25rem;
+  }
+  #output table{
+    width: 25rem;
+  }
+  th, td{
+    font-size: 0.9rem;
+  }
+  .delete{
+    width: 5rem;
+    height: 1.8rem;
+  }
+}
+@media(max-width:400px){
+  header h1{
+    font-size: 1.8rem;
+  }
+  input, button{
+    width: 22rem;
+    height: 2.5rem;
+  }
+  #output table{
+    width: 22rem;
+  }
+  .delete{
+    width: 4rem;
+    height: 1.5rem;
+  }
+}
+@media(max-width:330px){
+  header h1{
+    font-size: 1.6rem;
+  }
+  input, button{
+    width: 19rem;
+  }
+  #output table{
+    width: 19rem;
+  }
+  th, td{
+    font-size: 0.8rem;
+  }
+  .delete{
+    width: 3rem;
+    height: 1.5rem;
+  }
+}
+@media(max-width:300px){
+  input, button{
+    width: 17rem;
+  }
+  #output table{
+    width: 17rem;
+  }
+}

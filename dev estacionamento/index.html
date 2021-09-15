@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700&display=swap" rel="stylesheet">
+  <!--favicon-->
+  <link rel="shortcut icon" href="img/fav.ico">
+  <!--css-->
+  <link rel="stylesheet" href="assets/style.css">
+  <title>Dev Estacionamento</title>
+</head>
+<body>
+  <header>
+    <h1>Dev Estacionamento</h1>
+  </header>
+  <main>
+    <section id="input">
+      <input type="text" id="name" placeholder="Digite a modelo do veículo" autocomplete="off">
+      <input type="text" id="licence" placeholder="Digite a placa do veículo" autocomplete="off">
+      <button id="send">Registrar veículo</button>
+    </section>
+
+    <section id="output">
+      <table rules="none">
+        <thead>
+          <tr>
+            <th>Veículo</th>
+            <th>Placa</th>
+            <th>Horário</th>
+            <th>remover</th>
+          </tr>
+        </thead>
+        <tbody id="garage"></tbody>
+        <!--
+        este trecho é usado apenas para o estilo css, o Javascript é quem vai adicionar esta tabela
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><button class="delete modal-open">x</button></td>-->
+      </table>
+    </section>
+  </main>
+ 
+  <footer>
+    <div class="creator">
+      Criado por Dievan Martins
+    </div>
+    <div class="social">
+      <a href="mailto:dievanms@gmail.com" target="_black"><img src="img/gmail.svg" alt="Ícone do Gmail"></a>
+      <a href="https://github.com/DievanMartins" target="_black"><img src="img/github.svg" alt="Ícone do Github"></a>
+    </div>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
