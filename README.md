@@ -1,0 +1,2 @@
+# dev-estacionamento
+Sistema web feito com HTML, CSS e Javascript. O usuário insere o modelo e número da placa do veículo. O Javascript adiciona na tabela essas informações mais a hora em que foi inserida, há também um botão para remover o carro quando necessário. Quando o usuário clica no botão de remover abre um pop-up perguntando se o usuário encerrar. As informações continuarem salvas no navegador, é usado o localStorage. 
